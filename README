@@ -1,0 +1,223 @@
+<section id="precios" class="section pricing-pro">
+    <div class="container">
+
+      <div class="section-head" data-aos="fade-up">
+        <h2>Precios & Alcance</h2>
+        <p>Configurá tu landing. Mirá la demo, revisá qué incluye, sumá ampliaciones y mandame la consulta con el
+          detalle.</p>
+      </div>
+
+      <div class="card scope-card" data-aos="fade-up">
+        <!-- Media -->
+        <div class="scope-media">
+          <div class="scope-thumb thumb--landing"></div>
+          <div class="scope-actions">
+            <button class="btn-cta small btn-preview"
+              data-preview="https://rodrigobrun.github.io/Landing_Page_Ejemplo/">
+              <i class="ph ph-play"></i> Ver demo
+            </button>
+            <a class="btn-secondary small" href="https://rodrigobrun.github.io/Landing_Page_Ejemplo/" target="_blank"
+              rel="noopener">
+              <i class="ph ph-arrow-up-right"></i> Abrir demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Centro: tabs + paneles -->
+        <div class="scope-lead">
+          <div class="scope-header">
+            <h2 class="scope-title">Landing Ejemplo — Paquete Base</h2>
+            <p class="muted">Una <b>landing</b> es una página (un solo scroll) enfocada en que te contacten. Elegimos
+              qué lleva y ves el total en tiempo real.</p>
+            <div class="meta">
+              <span class="chip"><i class="ph ph-clock"></i> Entrega: 5–7 días</span>
+              <span class="chip"><i class="ph ph-arrows-clockwise"></i> 1 ronda de cambios</span>
+              <span class="chip"><i class="ph ph-device-mobile-camera"></i> Mobile-first</span>
+            </div>
+          </div>
+
+          <div class="scope-tabs" role="tablist" aria-label="Configuración">
+            <button class="tab is-active" role="tab" aria-selected="true" data-tab="incluye">Qué incluye</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="amplia">Ampliaciones</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="resumen">Resumen & Envío</button>
+          </div>
+
+          <div class="scope-panels">
+            <!-- Panel incluye -->
+            <section id="panel-incluye" class="panel is-active" data-panel="incluye" role="tabpanel">
+              <ol class="scope-steps">
+                <li class="tstep"><span class="num">1</span>
+                  <div class="s-content">
+                    <h4>Hero</h4>
+                    <p class="hint">Titular claro + resumen + 2 CTAs.</p>
+                  </div>
+                </li>
+                <li class="tstep"><span class="num">2</span>
+                  <div class="s-content">
+                    <h4>Beneficios / Servicios</h4>
+                    <p class="hint">3–6 puntos con íconos.</p>
+                  </div>
+                </li>
+                <li class="tstep"><span class="num">3</span>
+                  <div class="s-content">
+                    <h4>Galería simple</h4>
+                    <p class="hint">4–6 fotos fijas bien presentadas.</p>
+                  </div>
+                </li>
+                <li class="tstep"><span class="num">4</span>
+                  <div class="s-content">
+                    <h4>Métricas rápidas</h4>
+                    <p class="hint">Contadores de confianza.</p>
+                  </div>
+                </li>
+                <li class="tstep"><span class="num">5</span>
+                  <div class="s-content">
+                    <h4>Preguntas frecuentes</h4>
+                    <p class="hint">Acordeón anti-dudas.</p>
+                  </div>
+                </li>
+                <li class="tstep"><span class="num">6</span>
+                  <div class="s-content">
+                    <h4>Contacto directo</h4>
+                    <p class="hint">WhatsApp / Email listos.</p>
+                  </div>
+                </li>
+              </ol>
+
+              <div class="inclusions">
+                <span><i class="ph ph-layout"></i> Navbar desktop + Sidebar mobile</span>
+                <span><i class="ph ph-magnifying-glass"></i> SEO + performance optimizada</span>
+                <span><i class="ph ph-rocket-launch"></i> Deploy en GitHub Pages + dominio</span>
+              </div>
+
+              <div class="base-line">
+                <span class="label">Precio base</span>
+                <div class="price"><span class="currency">US$</span><span id="basePrice" data-usd="350">350</span><span
+                    class="period">único</span></div>
+              </div>
+            </section>
+
+            <!-- Panel ampliaciones -->
+            <section id="panel-amplia" class="panel" data-panel="amplia" role="tabpanel" aria-hidden="true">
+              <div class="addons-grid">
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-folders"></i>
+                    <div><strong>Sección informativa extra</strong><small class="muted">Texto + imagen/íconos (Sobre,
+                        Servicios, Diferenciales, etc.)</small></div>
+                  </div>
+                  <div class="addon-ctrl"><button class="step" data-step="-1">−</button><span class="qty"
+                      data-qty="0">0</span><button class="step" data-step="1">+</button><span class="unit muted">US$ <b
+                        data-usd="40">40</b> c/u</span></div>
+                </div>
+
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-images"></i>
+                    <div><strong>Sección con galería interactiva</strong><small class="muted">Grid con hover/zoom,
+                        lightbox o carrusel</small></div>
+                  </div>
+                  <div class="addon-ctrl"><button class="step" data-step="-1">−</button><span class="qty"
+                      data-qty="0">0</span><button class="step" data-step="1">+</button><span class="unit muted">US$ <b
+                        data-usd="70">70</b> c/u</span></div>
+                </div>
+
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-users-three"></i>
+                    <div><strong>Sección Equipo/Profesionales</strong><small class="muted">Cards con foto, rol y
+                        enlaces</small></div>
+                  </div>
+                  <div class="addon-ctrl"><label class="switch"><input type="checkbox" class="addon-toggle"
+                        data-usd="60"><span></span></label><span class="unit muted">US$ 60</span></div>
+                </div>
+
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-quotes"></i>
+                    <div><strong>Testimonios (carrusel)</strong><small class="muted">3–6 reseñas con foto/nombre</small>
+                    </div>
+                  </div>
+                  <div class="addon-ctrl"><label class="switch"><input type="checkbox" class="addon-toggle"
+                        data-usd="60"><span></span></label><span class="unit muted">US$ 60</span></div>
+                </div>
+
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-envelope-simple"></i>
+                    <div><strong>Formulario avanzado</strong><small class="muted">Validaciones + EmailJS / Google
+                        Sheets</small></div>
+                  </div>
+                  <div class="addon-ctrl"><label class="switch"><input type="checkbox" class="addon-toggle"
+                        data-usd="70"><span></span></label><span class="unit muted">US$ 70</span></div>
+                </div>
+
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-newspaper"></i>
+                    <div><strong>Blog/Noticias simple</strong><small class="muted">Listado + detalle básico</small>
+                    </div>
+                  </div>
+                  <div class="addon-ctrl"><label class="switch"><input type="checkbox" class="addon-toggle"
+                        data-usd="90"><span></span></label><span class="unit muted">US$ 90</span></div>
+                </div>
+
+                <div class="addon">
+                  <div class="addon-head"><i class="ph ph-translate"></i>
+                    <div><strong>Multi-idioma (ES/EN)</strong><small class="muted">Textos duplicados y toggle</small>
+                    </div>
+                  </div>
+                  <div class="addon-ctrl"><label class="switch"><input type="checkbox" class="addon-toggle"
+                        data-usd="120"><span></span></label><span class="unit muted">US$ 120</span></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Panel resumen -->
+            <section id="panel-resumen" class="panel" data-panel="resumen" role="tabpanel" aria-hidden="true">
+              <ul id="quoteBreakdownFull" class="breakdown"></ul>
+              <div class="quote-form">
+                <div class="row">
+                  <label>Nombre / Marca
+                    <input id="qName" type="text" placeholder="Ej: Kine Claudia / Panadería Sol">
+                  </label>
+                  <label>Rubro
+                    <input id="qIndustry" type="text" placeholder="Ej: Salud / Gastronomía">
+                  </label>
+                </div>
+                <div class="row">
+                  <label>Plazo deseado
+                    <input id="qDeadline" type="text" placeholder="Ej: 2 semanas">
+                  </label>
+                  <label>Medio preferido
+                    <select id="qChannel">
+                      <option>WhatsApp</option>
+                      <option>Email</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="cta-stack">
+                <a id="btnWA" class="btn-cta"><i class="ph ph-whatsapp-logo"></i> Enviar por WhatsApp</a>
+                <a id="btnEmail" class="btn-secondary"><i class="ph ph-envelope-simple"></i> Enviar por Email</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Resumen sticky -->
+        <aside class="total card">
+          <div class="total-head">
+            <span class="muted">Total estimado</span>
+            <div class="total-val"><span>US$</span><strong id="totalPrice">350</strong></div>
+            <p class="muted tiny">*Hosting & mantenimiento anual: US$ 120.</p>
+          </div>
+          <div class="mini-summary">
+            <span><b id="extraCount">0</b> ampliaciones</span>
+            <button id="goSummary" class="btn-cta sm"><i class="ph ph-list"></i> Ver resumen</button>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Barra flotante en mobile -->
+      <div class="quote-bar" id="quoteBar">
+        <div class="qb-left">US$ <b id="totalBar">350</b> • <span id="countBar">0</span> extras</div>
+        <button id="barSummary" class="btn-cta small">Resumen</button>
+      </div>
+
+    </div>
+  </section>

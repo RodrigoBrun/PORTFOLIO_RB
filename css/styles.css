@@ -1,0 +1,50 @@
+/* =======================
+   Tema base / variables
+======================= */
+:root{
+  --bg:#0b0c0f;
+  --bg-alt:#111318;
+  --card:#12141a;
+  --line:rgba(255,255,255,.08);
+  --text:#E9EEF5;
+  --muted:#9aa3ad;
+  --brand:#3EF3C3;
+  --brand2:#7AA9FF;
+  --shadow:0 10px 25px rgba(0,0,0,.35);
+}
+html[data-theme="light"]{
+  --bg:#f7f8fb;
+  --bg-alt:#fff;
+  --card:#fff;
+  --line:rgba(15,23,42,.12);
+  --text:#111827;
+  --muted:#5b6470;
+  --shadow:0 10px 25px rgba(2,6,23,.08);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--text); background:
+    radial-gradient(1000px 600px at 90% -20%, rgba(62,243,195,.08), transparent 40%),
+    radial-gradient(900px 500px at -10% 20%, rgba(122,169,255,.08), transparent 45%),
+    var(--bg);
+}
+
+/* =======================
+   Utilidades / layout
+======================= */
+.container{width:min(1100px, 92%); margin:0 auto}
+.section{padding:64px 0}
+.section.alt{background:linear-gradient(180deg,transparent,var(--bg-alt))}
+.section-head h2{margin:0 0 6px}
+.section-head p{margin:0; color:var(--muted)}
+.card{
+  border:1px solid var(--line); border-radius:1.2rem; background:var(--card);
+  box-shadow:var(--shadow);
+}
+
+
+
+/* AOS */
+[data-aos]{will-change:transform,opacity}

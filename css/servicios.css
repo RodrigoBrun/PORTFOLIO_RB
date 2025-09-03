@@ -1,0 +1,119 @@
+/* =======================
+   Servicios
+======================= */
+.services-grid{display:grid; gap:12px; grid-template-columns:1fr}
+@media (min-width:860px){ .services-grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.service{padding:16px; text-align:center}
+.service i{font-size:26px; color:var(--brand)}
+
+/* =======================
+   PRICING — Layout con tabs
+======================= */
+.pricing-pro .scope-card{
+  display:grid; gap:24px; padding:22px;
+  grid-template-columns:1fr; grid-template-areas:"media" "lead" "total";
+}
+.pricing-pro .scope-media{grid-area:media; display:grid; gap:12px; align-self:start}
+.pricing-pro .scope-lead{grid-area:lead}
+.pricing-pro .total{grid-area:total; align-self:start}
+
+.pricing-pro .scope-thumb{
+  aspect-ratio:16/9; border-radius:1rem; overflow:hidden;
+  border:1px solid var(--line); box-shadow:var(--shadow);
+  background:
+    linear-gradient(120deg, rgba(62,243,195,.18), rgba(122,169,255,.18)),
+    url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+.pricing-pro .scope-actions{display:flex; gap:.6rem; flex-wrap:wrap}
+.btn-cta.small,.btn-secondary.small{padding:.55rem .9rem}
+
+.pricing-pro .scope-title{margin:0 0 .35rem; font-size:clamp(1.2rem,1rem + 1vw,1.75rem)}
+.pricing-pro .scope-header>.muted{margin:0 0 .6rem}
+.pricing-pro .meta{display:flex; flex-wrap:wrap; gap:.5rem; margin:.2rem 0 .8rem}
+.pricing-pro .chip{display:inline-flex; align-items:center; gap:.4rem; padding:.38rem .62rem; border:1px solid var(--line); background:var(--bg-alt); color:var(--muted); border-radius:.7rem}
+.pricing-pro .chip i{color:var(--brand)}
+
+.pricing-pro .scope-tabs{display:flex; gap:8px; border-bottom:1px solid var(--line); margin:.2rem 0 .8rem}
+.pricing-pro .tab{appearance:none; background:transparent; color:var(--muted); border:none; padding:.55rem .85rem; border-radius:.6rem .6rem 0 0; cursor:pointer}
+.pricing-pro .tab.is-active{color:var(--text); background:var(--bg-alt); border:1px solid var(--line); border-bottom-color:transparent}
+.pricing-pro .scope-panels .panel{display:none; padding-top:.6rem}
+.pricing-pro .scope-panels .panel.is-active{display:block}
+
+/* Timeline */
+.pricing-pro .scope-steps{list-style:none; padding:0; margin:8px 0 12px}
+.pricing-pro .scope-steps .tstep{display:grid; grid-template-columns:auto 1fr; gap:.75rem; padding:10px 0; border-bottom:1px dashed var(--line)}
+.pricing-pro .scope-steps .tstep:last-child{border-bottom:0}
+.pricing-pro .num{width:28px; height:28px; display:grid; place-items:center; font-weight:800; font-size:.95rem; border-radius:999px; color:#0b0c0f; background:linear-gradient(90deg,var(--brand),var(--brand2))}
+.pricing-pro .hint{margin:0; color:var(--muted); font-size:.95rem; line-height:1.35}
+
+/* Inclusiones / base */
+.pricing-pro .inclusions{display:flex; flex-wrap:wrap; gap:.5rem; margin:.2rem 0 .5rem}
+.pricing-pro .inclusions span{display:inline-flex; align-items:center; gap:.4rem; padding:.38rem .62rem; border:1px dashed var(--line); border-radius:.7rem; color:var(--muted)}
+.pricing-pro .inclusions i{color:var(--brand)}
+.pricing-pro .base-line{display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); padding-top:12px; margin-top:6px}
+.pricing-pro .price{display:flex; align-items:baseline; gap:.35rem; font-weight:800}
+.pricing-pro .price .period{color:var(--muted); font-size:.9rem}
+
+/* Addons */
+.pricing-pro .addons-grid{display:grid; gap:12px; grid-template-columns:1fr}
+@media (min-width:900px){ .pricing-pro .addons-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+.pricing-pro .addon{position:relative; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px; border:1px solid var(--line); border-radius:1rem; background:var(--bg-alt)}
+.pricing-pro .addon::before{content:""; position:absolute; left:8px; top:10px; bottom:10px; width:3px; border-radius:3px; background:linear-gradient(180deg,var(--brand),var(--brand2))}
+.pricing-pro .addon-head{display:flex; gap:.75rem; align-items:flex-start; flex:1; padding-left:8px}
+.pricing-pro .addon-head i{color:var(--brand); font-size:22px; margin-top:.15rem}
+.pricing-pro .addon-head strong{display:block; margin-bottom:2px}
+.pricing-pro .addon-head small{color:var(--muted)}
+.pricing-pro .addon-ctrl{display:flex; align-items:center; gap:.55rem}
+.pricing-pro .step{width:34px; height:34px; border-radius:.7rem; border:1px solid var(--line); background:transparent; color:var(--text); font-weight:800; line-height:0; cursor:pointer}
+.pricing-pro .qty{min-width:28px; text-align:center; font-weight:800; padding:0 .25rem; background:var(--card); border:1px solid var(--line); border-radius:.55rem}
+.pricing-pro .unit{display:inline-flex; align-items:center; gap:.25rem; padding:.3rem .55rem; background:var(--card); border:1px dashed var(--line); border-radius:.6rem}
+
+/* switches */
+.pricing-pro .switch{position:relative; display:inline-block; width:48px; height:28px}
+.pricing-pro .switch input{display:none}
+.pricing-pro .switch span{position:absolute; inset:0; cursor:pointer; background:var(--bg); border:1px solid var(--line); border-radius:999px; transition:.2s}
+.pricing-pro .switch span:before{content:""; position:absolute; height:22px; width:22px; left:3px; top:2px; background:var(--text); border-radius:50%; transition:.2s}
+.pricing-pro .switch input:checked + span{background:linear-gradient(90deg,var(--brand),var(--brand2))}
+.pricing-pro .switch input:checked + span:before{transform:translateX(20px); background:#0b0c0f}
+
+/* Resumen sticky */
+.pricing-pro .total{
+  padding:16px; border-radius:1rem; border:1px solid transparent;
+  background:linear-gradient(var(--card),var(--card)) padding-box, linear-gradient(90deg,var(--brand),var(--brand2)) border-box;
+  box-shadow:0 8px 22px rgba(0,0,0,.25); display:grid; gap:.55rem;
+}
+.pricing-pro .total-head .total-val{display:flex; align-items:baseline; gap:.35rem; font-size:1.8rem}
+.pricing-pro .mini-summary{display:flex; justify-content:space-between; align-items:center; gap:10px}
+.pricing-pro .btn-cta.sm{padding:.5rem .75rem}
+
+/* Breakdown (panel Resumen) */
+.pricing-pro .breakdown{list-style:none; padding:0; margin:6px 0 14px}
+.pricing-pro .breakdown li{display:flex; justify-content:space-between; gap:10px; padding:6px 0; border-bottom:1px dashed var(--line)}
+.pricing-pro .breakdown li:last-child{border-bottom:0}
+.pricing-pro .breakdown li.muted{color:var(--muted)}
+
+/* Form */
+.pricing-pro .quote-form .row{display:grid; gap:10px; grid-template-columns:1fr}
+.pricing-pro .quote-form label{display:grid; gap:6px; font-size:.95rem}
+.pricing-pro .quote-form input,.pricing-pro .quote-form select{background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:.6rem; padding:.6rem .7rem}
+@media (min-width:760px){ .pricing-pro .quote-form .row{grid-template-columns:1fr 1fr} }
+
+/* Barra flotante mobile */
+.quote-bar{
+  position:fixed; left:16px; right:16px; bottom:16px; z-index:30;
+  display:none; align-items:center; justify-content:space-between; gap:10px;
+  padding:10px 12px; border:1px solid var(--line); border-radius:.9rem;
+  background:var(--card); box-shadow:0 10px 26px rgba(0,0,0,.28);
+}
+.quote-bar.show{display:flex}
+.quote-bar .qb-left{font-weight:700}
+
+/* Desktop grid para pricing */
+@media (min-width:1100px){
+  .pricing-pro .scope-card{
+    grid-template-columns:1.1fr 1.7fr .8fr;
+    grid-template-areas:"media lead total";
+  }
+  .pricing-pro .total{position:sticky; top:88px}
+  .pricing-pro .total-head .total-val{font-size:2rem}
+}

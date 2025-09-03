@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Rodrigo Brun</title>
+
+  <!-- Fuentes & Iconos -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/css/regular.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header_vav.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/proyectos.css" />
+    <link rel="stylesheet" href="./css/servicios.css" />
+    <link rel="stylesheet" href="./css/precios.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    
+  <meta name="description"
+    content="Portfolio 2025 de Rodrigo Brun: landings modernas, UI/UX, animaciones y performance.">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-row">
+      <a href="#" class="brand">
+        <i class="ph ph-seal-check"></i>
+        <span>Rodrigo Brun</span>
+      </a>
+
+      <!-- navbar (desktop) -->
+      <nav class="nav hide-mobile">
+        <a class="nav-link" data-target="hero">Inicio</a>
+        <a class="nav-link" data-target="proyectos">Proyectos</a>
+        <a class="nav-link" data-target="servicios">Servicios</a>
+        <a class="nav-link" data-target="precios">Precios</a>
+        <a class="nav-link" data-target="contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-theme" class="icon-btn" aria-label="Cambiar tema"><i class="ph ph-moon"></i></button>
+        <button id="btn-menu" class="icon-btn show-mobile" aria-label="Abrir menú"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar mobile -->
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <span class="sidebar-title"><i class="ph ph-user"></i> Rodrigo Brun</span>
+      <button id="btn-close" class="icon-btn" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="sidebar-link" data-target="hero"><i class="ph ph-house"></i> Inicio</a>
+      <a class="sidebar-link" data-target="proyectos"><i class="ph ph-folders"></i> Proyectos</a>
+      <a class="sidebar-link" data-target="servicios"><i class="ph ph-briefcase"></i> Servicios</a>
+      <a class="sidebar-link" data-target="precios"><i class="ph ph-tag"></i> Precios</a>
+      <a class="sidebar-link" data-target="contacto"><i class="ph ph-chat-circle"></i> Contacto</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button id="btn-theme-mobile" class="btn-ghost"><i class="ph ph-moon"></i> Modo oscuro</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="section hero">
+    <div class="container hero-layout">
+      <div class="hero-main" data-aos="fade-right">
+        <h1 class="display">Webs <span class="grad">modernas</span>, que convierten.</h1>
+        <p class="lead">Diseño y desarrollo de landing pages y sitios a medida: UI limpia, animaciones suaves, SEO
+          básico y performance real.</p>
+
+        <div class="kpis">
+          <div class="kpi">
+            <i class="ph ph-lightning"></i>
+            <div><span class="metric" data-counter="6">0</span><small>Proyectos online</small></div>
+          </div>
+          <div class="kpi">
+            <i class="ph ph-gauge"></i>
+            <div><span class="metric" data-counter="95">0</span><small>Performance promedio</small></div>
+          </div>
+          <div class="kpi">
+            <i class="ph ph-smiley"></i>
+            <div><span class="metric" data-counter="100">0</span><small>Clientes satisfechos</small></div>
+          </div>
+          <div class="kpi">
+            <i class="ph ph-device-mobile-camera"></i>
+            <div><span class="metric" data-counter="100">0</span><small>Mobile-first</small></div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn-cta" data-target="proyectos"><i class="ph ph-rocket"></i> Ver proyectos</a>
+          <a class="btn-secondary" data-target="contacto"><i class="ph ph-whatsapp-logo"></i> Hablemos</a>
+        </div>
+      </div>
+
+      <div class="hero-aside" data-aos="fade-left">
+        <div class="avatar-slot">
+          <img src="imagenes/logo_RB.png" alt="Avatar Rodrigo Brun">
+        </div>
+        <ul class="badges">
+          <li><i class="ph ph-code"></i> HTML/CSS/JS</li>
+          <li><i class="ph ph-rocket-launch"></i> GitHub Pages</li>
+          <li><i class="ph ph-sparkle"></i> AOS / Micro-UX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROYECTOS ================= -->
+<section id="proyectos" class="section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <h2>Proyectos</h2>
+      <p>Cards con preview en modal. Si un dominio bloquea iframes, abrís el sitio igual.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- SYB -->
+      <article class="card project" data-aos="fade-up">
+        <div class="thumb">
+          <img src="imagenes/foto_preview_SaludYBienestar.png" alt="Vista previa Salud y Bienestar">
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Salud y Bienestar</h3>
+            <span class="tag">Salud</span>
+          </div>
+          <p>Portal integral con nutrición, fitness y bienestar. UI propia y secciones dinámicas.</p>
+          <div class="actions">
+            <button class="btn-preview" data-preview="https://rodrigobrun.github.io/SYB/">
+              <i class="ph ph-play"></i> Preview
+            </button>
+            <a class="btn-link" href="https://rodrigobrun.github.io/SYB/" target="_blank" rel="noopener">Abrir sitio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Transportes -->
+      <article class="card project" data-aos="fade-up" data-aos-delay="60">
+        <div class="thumb">
+          <img src="imagenes/foto_preview_SandroFernandez.png" alt="Vista previa Sandro Fernández Transportes">
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Sandro Fernández Transportes</h3>
+            <span class="tag">Servicios</span>
+          </div>
+          <p>Landing con AOS y contenido claro para captar consultas.</p>
+          <div class="actions">
+            <button class="btn-preview" data-preview="https://sandrofernandeztransportes.com.uy/">
+              <i class="ph ph-play"></i> Preview
+            </button>
+            <a class="btn-link" href="https://sandrofernandeztransportes.com.uy/" target="_blank" rel="noopener">Abrir sitio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Invitaciones -->
+      <article class="card project" data-aos="fade-up" data-aos-delay="120">
+        <div class="thumb">
+          <img src="imagenes/foto_preview_TiendaInvitaciones.png" alt="Vista previa Tienda de Invitaciones Web">
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Tienda de Invitaciones Web</h3>
+            <span class="tag">Producto</span>
+          </div>
+          <p>Tienda/plantilla premium estilo Greenvelope. Catálogo y solicitud.</p>
+          <div class="actions">
+            <button class="btn-preview" data-preview="https://rodrigobrun.github.io/Tienda_De_Invitaciones_Web/">
+              <i class="ph ph-play"></i> Preview
+            </button>
+            <a class="btn-link" href="https://rodrigobrun.github.io/Tienda_De_Invitaciones_Web/" target="_blank" rel="noopener">Abrir sitio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Automotora -->
+      <article class="card project" data-aos="fade-up" data-aos-delay="180">
+        <div class="thumb">
+          <img src="imagenes/foto_preview_Automotora.png" alt="Vista previa Automotora">
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Automotora</h3>
+            <span class="tag">Catálogo</span>
+          </div>
+          <p>Catálogo de vehículos con UI tipo app y modal de ficha técnica.</p>
+          <div class="actions">
+            <button class="btn-preview" data-preview="https://rodrigobrun.github.io/Automotora/">
+              <i class="ph ph-play"></i> Preview
+            </button>
+            <a class="btn-link" href="https://rodrigobrun.github.io/Automotora/" target="_blank" rel="noopener">Abrir sitio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kinesiología -->
+      <article class="card project" data-aos="fade-up" data-aos-delay="240">
+        <div class="thumb">
+          <img src="imagenes/foto_preview_Kinesiologia.png" alt="Vista previa Claudia — Kinesiología">
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Claudia — Kinesiología</h3>
+            <span class="tag">Servicios</span>
+          </div>
+          <p>Landing con servicios y base de reservas/panel admin en progreso.</p>
+          <div class="actions">
+            <button class="btn-preview" data-preview="https://rodrigobrun.github.io/Claudia-Kinesiologia/">
+              <i class="ph ph-play"></i> Preview
+            </button>
+            <a class="btn-link" href="https://rodrigobrun.github.io/Claudia-Kinesiologia/" target="_blank" rel="noopener">Abrir sitio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Landing ejemplo -->
+      <article class="card project" data-aos="fade-up" data-aos-delay="300">
+        <div class="thumb">
+          <img src="imagenes/foto_preview_LandingEjemplo1.png" alt="Vista previa Landing Page Ejemplo">
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Landing Page Ejemplo</h3>
+            <span class="tag">Template</span>
+          </div>
+          <p>Base premium con navbar+sidebar, FAQ, pricing y contadores.</p>
+          <div class="actions">
+            <button class="btn-preview" data-preview="https://rodrigobrun.github.io/Landing_Page_Ejemplo/">
+              <i class="ph ph-play"></i> Preview
+            </button>
+            <a class="btn-link" href="https://rodrigobrun.github.io/Landing_Page_Ejemplo/" target="_blank" rel="noopener">Abrir sitio</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ================= SERVICIOS ================= -->
+  <section id="servicios" class="section alt">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2>Servicios</h2>
+        <p>Paquetes flexibles para PyMEs, profesionales e influencers.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service card" data-aos="fade-up">
+          <i class="ph ph-device-mobile-camera"></i>
+          <h3>Landing Pages</h3>
+          <p>Diseño a medida, mobile-first, SEO básico y animaciones suaves.</p>
+        </div>
+        <div class="service card" data-aos="fade-up" data-aos-delay="80">
+          <i class="ph ph-shopping-bag"></i>
+          <h3>Productos Web</h3>
+          <p>Plantillas/tiendas propias adaptables a tu marca (invitaciones, catálogos).</p>
+        </div>
+        <div class="service card" data-aos="fade-up" data-aos-delay="160">
+          <i class="ph ph-cloud-arrow-up"></i>
+          <h3>Hosting & Mantenimiento</h3>
+          <p>Tu web online con dominio, monitoreo y ajustes menores durante el año.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRECIOS (Configurador) ================= -->
+  
+
+  <!-- ================= CONTACTO ================= -->
+  <section id="contacto" class="section">
+    <div class="container contact card" data-aos="fade-up">
+      <h2>¿Creamos algo?</h2>
+      <p>Escribime y armamos una propuesta según tu objetivo.</p>
+      <div class="contact-actions">
+        <a class="btn-cta" href="https://wa.me/59899999999" target="_blank" rel="noopener"><i
+            class="ph ph-whatsapp-logo"></i> WhatsApp</a>
+        <a class="btn-secondary" href="mailto:rodribru.dev@gmail.com"><i class="ph ph-envelope-simple"></i> Email</a>
+        <a class="btn-secondary" href="https://github.com/rodrigobrun" target="_blank" rel="noopener"><i
+            class="ph ph-github-logo"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODAL PREVIEW ================= -->
+  <div id="previewModal" class="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-bar">
+        <span class="modal-title"><i class="ph ph-monitor-play"></i> Preview</span>
+        <button class="icon-btn" id="modalClose" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="iframe-wrap">
+        <div class="iframe-loader"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <iframe id="previewFrame" title="Live preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      </div>
+      <div class="modal-actions">
+        <a id="modalOpenSite" class="btn-cta" href="#" target="_blank" rel="noopener"><i
+            class="ph ph-arrow-up-right"></i> Abrir sitio</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Rodrigo Brun — Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="https://github.com/rodrigobrun" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Usa el script, no la hoja CSS -->
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <script src="./js/scripts.js"></script>
+  <script src="./js/oscuro_claro.js"></script>
+  <script src="./js/navegacion.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

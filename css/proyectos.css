@@ -1,0 +1,154 @@
+/* =======================
+   PROYECTOS — thumbs IMG
+   (parche universal)
+======================= */
+
+/* =======================
+   Proyectos
+======================= */
+.projects-grid{display:grid; gap:14px; grid-template-columns:1fr}
+@media (min-width:860px){ .projects-grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
+.project .thumb{aspect-ratio:16/9; border-radius:.9rem; border:1px solid var(--line); background:var(--bg-alt) center/cover no-repeat}
+.project .card-body{padding:12px}
+.card-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:6px}
+.tag{border:1px solid var(--line); padding:.2rem .5rem; border-radius:.6rem; color:var(--muted); font-size:.85rem}
+.project .actions{display:flex; gap:.6rem; flex-wrap:wrap; margin-top:10px}
+
+/* Thumbs rápidas (podés cambiarlas por capturas reales) */
+.thumb[data-thumb="syb"]{background-image:url('https://images.unsplash.com/photo-1553531888-a7735236a9b0?q=80&w=1200&auto=format&fit=crop')}
+.thumb[data-thumb="transportes"]{background-image:url('https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=1200&auto=format&fit=crop')}
+.thumb[data-thumb="invitaciones"]{background-image:url('https://images.unsplash.com/photo-1518732714860-b62714ce0c59?q=80&w=1200&auto=format&fit=crop')}
+.thumb[data-thumb="automotora"]{background-image:url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop')}
+.thumb[data-thumb="kine"]{background-image:url('https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop')}
+.thumb[data-thumb="landing"]{background-image:url('https://images.unsplash.com/photo-1553456558-aff63285bdd1?q=80&w=1200&auto=format&fit=crop')}
+
+
+
+.project .thumb{
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: .9rem;
+  border: 1px solid var(--line);
+  background: var(--bg-alt);   /* fallback mientras carga */
+  overflow: hidden;            /* evita que la imagen se salga */
+}
+
+/* La imagen ocupa todo el contenedor, sin deformarse */
+.project .thumb > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* recorta para llenar */
+  object-position: center;     /* centrada */
+}
+
+/* Si alguna card antigua todavía usa data-thumb sin <img>, mantené compatibilidad */
+.project .thumb[data-thumb]{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Opcional: efecto sutil de hover coherente con tu estilo */
+.project .thumb:hover > img{
+  transform: scale(1.02);
+  transition: transform .25s ease;
+}
+
+
+/* Base (igual que antes) */
+.project .thumb{ --ox:50%; --oy:50%; --zoom:1; }
+.project .thumb{
+  position:relative; aspect-ratio:16/9; border-radius:.9rem; border:1px solid var(--line);
+  background:var(--bg-alt); overflow:hidden;
+}
+.project .thumb>img{
+  width:100%; height:100%; object-fit:cover;
+  object-position:var(--ox) var(--oy);
+  transform:scale(var(--zoom)); transform-origin:var(--ox) var(--oy);
+  transition:object-position .25s ease, transform .25s ease;
+}
+
+/* 🎯 Ajustes por card (1..6) – cambiá los valores a tu gusto */
+.projects-grid > article:nth-child(1) .thumb{ /* Salud y Bienestar */
+  --ox: 18%; --oy: 40%; --zoom: 1.10;
+}
+.projects-grid > article:nth-child(2) .thumb{ /* Transportes */
+  --ox: 20%; --oy: 35%; --zoom: 1.05;
+}
+.projects-grid > article:nth-child(3) .thumb{ /* Invitaciones */
+  --ox: 52%; --oy: 50%; --zoom: 1.0;
+}
+.projects-grid > article:nth-child(4) .thumb{ /* Automotora */
+  --ox: 45%; --oy: 50%; --zoom: 1.0;
+}
+.projects-grid > article:nth-child(5) .thumb{ /* Kinesiología */
+  --ox: 50%; --oy: 35%; --zoom: 1.;
+}
+.projects-grid > article:nth-child(6) .thumb{ /* Landing Ejemplo */
+  --ox: 55%; --oy: 2%; --zoom: 1.0;
+}
+
+/* Compatibilidad con data-thumb antiguos (por si queda alguno) */
+.project .thumb[data-thumb]{ background-size:cover; background-position:center; background-repeat:no-repeat; }
+
+
+
+
+
+
+/* =======================
+   PROYECTOS — Botones de acción
+======================= */
+
+.project .actions{
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Botón Preview (más llamativo) */
+.project .btn-preview{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .55rem 1rem;
+  font-weight: 600;
+  font-size: .9rem;
+  border-radius: .7rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg,var(--brand),var(--brand2));
+  color: #0b0c0f; /* contraste con tu bg oscuro */
+  box-shadow: 0 4px 12px rgba(0,0,0,.35);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.project .btn-preview i{ font-size: 1rem; }
+
+.project .btn-preview:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.45);
+}
+
+/* Botón Abrir sitio (más discreto pero elegante) */
+.project .btn-link{
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+  border-radius: .7rem;
+  border: 1px solid var(--line);
+  background: var(--bg-alt);
+  color: var(--text);
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.project .btn-link:hover{
+  background: var(--bg);
+  border-color: var(--brand);
+  color: var(--brand);
+}
